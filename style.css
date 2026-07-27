@@ -1,0 +1,996 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   HOME — DAY TIME THEME
+   ============================================================ */
+
+.home-body {
+  background: #00c6f5;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+.home-body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  background-image: url('https://static.wikia.nocookie.net/megamitensei/images/f/fd/Jack_Frost_%28Trading_Card_Art%29.png/revision/latest?cb=20240509024616');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  filter: brightness(0) saturate(100%) invert(49%) sepia(95%) saturate(2902%) hue-rotate(160deg) brightness(90%) contrast(190%);
+}
+
+.home-body h1 {
+  font-style: italic;
+  font-family: "Exo 2", sans-serif;
+}
+
+.home-body span {
+  font-family: "Quantico", sans-serif;
+}
+
+.home-body p {
+  font-family: "Inter", sans-serif;
+  margin-right: 5%;
+  text-align: justify;
+  font-size: clamp(13px, 1.6vw, 26px);
+}
+
+.home-conteudo {
+  position: absolute;
+  left: 8%;
+  top: 5%;
+  color: white;
+  max-width: 55%;
+}
+
+.home-conteudo h1 {
+  font-size: clamp(22px, 3.8vw, 52px);
+  margin: 10px 0;
+}
+
+.home-button {
+  position: fixed;
+  width: 120vw;
+  height: clamp(48px, 9vw, 150px);
+  left: 20vw;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  padding-left: clamp(20px, 4vw, 60px);
+  letter-spacing: clamp(1px, 0.3vw, 4px);
+  color: #0077ff91;
+  text-decoration: none;
+  font-size: clamp(14px, 4.5vw, 70px);
+  font-weight: 700;
+  transition: 0.3s;
+  overflow: visible;
+  z-index: 5;
+}
+
+.home-b1,
+.home-b2,
+.home-b3 {
+  background: #00a2e8;
+}
+
+.home-b1 {
+  top: 35vh;
+}
+
+.home-b2 {
+  top: 60vh;
+}
+
+.home-b3 {
+  top: 85vh;
+}
+
+.home-button:hover {
+  transform: rotate(-45deg) scale(1.1);
+  filter: brightness(1.1);
+  color: #3dffc591;
+}
+
+.home-lis1 {
+  margin-left: 41vw;
+}
+
+.home-lis2 {
+  margin-left: 46vw;
+}
+
+.home-lis3 {
+  margin-left: 59vw;
+}
+
+.home-foto {
+  position: absolute;
+  left: 0%;
+  bottom: 0px;
+
+}
+
+.home-foto img {
+  width: clamp(120px, 22vw, 450px);
+  height: auto;
+  display: block;
+}
+
+.home-sidebar {
+  position: fixed;
+  bottom: clamp(6px, 1.5vh, 20px);
+  right: clamp(10px, 2vw, 30px);
+  display: flex;
+  gap: clamp(6px, 0.8vw, 12px);
+  z-index: 10;
+}
+
+.home-sidebar a {
+  color: #00a2e8;
+  font-size: clamp(18px, 2.5vw, 38px);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.home-sidebar a:hover {
+  color: #ffffff;
+  transform: translateY(-6px);
+}
+
+/* ============================================================
+   HOME — DARK HOUR THEME
+   ============================================================ */
+
+.dh-body {
+  background-color: #11221d;
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.dh-body::before {
+  content: "";
+  position: fixed;
+  top: -5%;
+  left: 0;
+  width: 105%;
+  height: 120%;
+  z-index: -1;
+  background-image: url('https://static.wikia.nocookie.net/megamitensei/images/f/f4/4%29Thanatos.png/revision/latest?cb=20231221105311');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  filter: brightness(0) saturate(100%) invert(32%) sepia(5%) saturate(1565%) hue-rotate(112deg) brightness(99%) contrast(170%);
+}
+
+.dh-body h1 {
+  font-style: italic;
+  font-family: "Exo 2", sans-serif;
+}
+
+.dh-body span {
+  font-family: "Quantico", sans-serif;
+}
+
+.dh-body p {
+  font-family: "Inter", sans-serif;
+  margin-right: 50%;
+  text-align: justify;
+  font-size: clamp(12px, 1.3vw, 20px);
+}
+
+.dh-conteudo {
+  padding: 20px 20px 20px 20px;
+  color: white;
+  max-width: 65%;
+}
+
+.dh-conteudo h1 {
+  font-size: clamp(18px, 3vw, 42px);
+  margin: 10px 0;
+}
+
+.dh-button {
+  position: fixed;
+  width: 120vw;
+  height: clamp(48px, 9vw, 150px);
+  left: 20vw;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  padding-left: clamp(20px, 4vw, 60px);
+  letter-spacing: clamp(1px, 0.3vw, 4px);
+  color: #3dffc591;
+  text-decoration: none;
+  font-size: clamp(14px, 4.5vw, 70px);
+  font-weight: 700;
+  transition: 0.3s;
+  overflow: visible;
+  z-index: 5;
+}
+
+.dh-b1,
+.dh-b2,
+.dh-b3 {
+  background: #234239;
+}
+
+.dh-b1 {
+  top: 35vh;
+}
+
+.dh-b2 {
+  top: 60vh;
+}
+
+.dh-b3 {
+  top: 85vh;
+}
+
+.dh-button:hover {
+  transform: rotate(-45deg) scale(1.1);
+  filter: brightness(1.1);
+}
+
+.dh-button-especial:hover {
+  color: #0077ff91;
+}
+
+.dh-lis1 {
+  margin-left: 45vw;
+}
+
+.dh-lis1c {
+  margin-left: 41vw;
+}
+
+.dh-lis1o {
+  margin-left: 41vw;
+}
+
+.dh-lis2 {
+  margin-left: 46vw;
+}
+
+.dh-lis2c {
+  margin-left: 52vw;
+}
+
+.dh-lis3 {
+  margin-left: 59vw;
+}
+
+.dh-lis3o {
+  margin-left: 62vw;
+}
+
+.dh-sidebar {
+  position: fixed;
+  bottom: clamp(6px, 1.5vh, 20px);
+  right: clamp(10px, 2vw, 30px);
+  display: flex;
+  gap: clamp(6px, 0.8vw, 12px);
+  z-index: 10;
+}
+
+.dh-sidebar a {
+  color: #234239;
+  font-size: clamp(18px, 2.5vw, 38px);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dh-sidebar a:hover {
+  color: #ffffff;
+  transform: translateY(-6px);
+}
+
+.dh-container-hobbies {
+  width: clamp(280px, 55vw, 1000px);
+  max-width: 100%;
+  margin: 20px 0;
+  background: #0d1f19;
+  border-radius: 8px;
+  border: 1px solid #1b9c51;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dh-tabela-jogos {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(11px, 1vw, 14px);
+}
+
+.dh-tabela-jogos th {
+  background-color: #0d2b20;
+  color: #00ff88;
+  text-align: left;
+  padding: clamp(6px, 0.8vh, 12px) clamp(8px, 0.8vw, 14px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+}
+
+.dh-tabela-jogos td {
+  padding: clamp(6px, 0.8vh, 12px) clamp(8px, 0.8vw, 14px);
+  border-bottom: 1px solid #1b9c51;
+  vertical-align: top;
+}
+
+.dh-tabela-jogos tr:hover {
+  background-color: #1d4638;
+}
+
+.dh-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: clamp(10px, 0.85vw, 12px);
+  font-weight: 700;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.dh-status-platina .dh-badge {
+  background-color: #ffd700;
+  color: #000000;
+}
+
+.dh-status-vergonha .dh-badge {
+  background-color: #ff6b35;
+  color: #ffffff;
+}
+
+.dh-YGP-link {
+  position: fixed;
+  background: #00ff88;
+  color: #000000;
+  text-decoration: none;
+  font-family: "Quantico", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  padding: clamp(6px, 0.8vh, 10px) clamp(10px, 1.2vw, 20px);
+  transition: 0.2s;
+  font-size: clamp(14px, 1.5vw, 24px);
+  top: 15%;
+  left: 58%;
+  z-index: 6;
+  white-space: nowrap;
+}
+
+.dh-YGP-link:hover {
+  background: #fff;
+}
+
+.dh-wishlist {
+  width: clamp(240px, 45vw, 800px);
+  max-width: 100%;
+  margin: 24px 0;
+}
+
+.dh-wishlist-titulo {
+  font-family: "Quantico", sans-serif;
+  color: #00ff88;
+  font-size: clamp(12px, 1.2vw, 18px);
+  letter-spacing: 4px;
+  margin: clamp(20px, 3.5vh, 52px) 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dh-wishlist-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dh-wishlist-bloco {
+  background: #111e18;
+  border: 1px solid #1e3d30;
+  border-radius: 6px;
+  padding: clamp(8px, 1vh, 14px) clamp(10px, 1vw, 18px);
+  transition: 0.2s;
+  cursor: default;
+}
+
+.dh-wishlist-bloco:hover {
+  background: #1d4638;
+  border-color: #00ff8855;
+  transform: translateX(4px);
+}
+
+.dh-wishlist-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dh-wishlist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.dh-wishlist-info b {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(12px, 1vw, 14px);
+}
+
+.dh-wishlist-tag {
+  font-family: "Quantico", sans-serif;
+  font-size: clamp(10px, 0.85vw, 12px);
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #2a2200;
+  color: #ffd700;
+  border: 1px solid #ffd70044;
+  white-space: nowrap;
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+
+  .home-conteudo {
+    max-width: 50%;
+    left: 5%;
+  }
+
+  .home-body p {
+    margin-right: 40%;
+    font-size: clamp(13px, 1.8vw, 22px);
+  }
+
+  .dh-conteudo {
+    max-width: 55%;
+  }
+
+  .dh-body p {
+    margin-right: 45%;
+    font-size: clamp(12px, 1.5vw, 18px);
+  }
+
+  .dh-YGP-link {
+    left: 55%;
+    top: 12%;
+    font-size: clamp(14px, 1.8vw, 22px);
+  }
+
+  .home-button {
+    font-size: clamp(12px, 3.5vw, 50px);
+    height: clamp(40px, 7vw, 100px);
+  }
+
+  .dh-button {
+    font-size: clamp(12px, 3.5vw, 50px);
+    height: clamp(40px, 7vw, 100px);
+  }
+}
+
+.dh-experiment-log {
+  width: clamp(280px, 55vw, 900px);
+  max-width: 100%;
+  background: #0d1f19;
+  border: 1px solid #1b9c51;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.dh-log-title {
+  color: #00ff88;
+  font-family: "Quantico", sans-serif;
+  font-size: clamp(18px, 2vw, 28px);
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.dh-log-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.dh-log-group label {
+  color: #3dffc5;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-family: "Quantico", sans-serif;
+}
+
+.dh-log-group input,
+.dh-log-group select,
+.dh-log-group textarea {
+  width: 100%;
+  background: #11221d;
+  border: 1px solid #234239;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition: 0.2s;
+}
+
+.dh-log-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.dh-log-group input:focus,
+.dh-log-group select:focus,
+.dh-log-group textarea:focus {
+  border-color: #00ff88;
+  box-shadow: 0 0 10px #00ff8844;
+}
+
+.dh-log-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.dh-log-buttons button {
+  background: #234239;
+  border: 1px solid #1b9c51;
+  color: #3dffc5;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.dh-log-buttons button:hover {
+  background: #1d4638;
+  transform: translateY(-2px);
+}
+
+.dh-log-message {
+  color: #00ff88;
+  margin-top: 18px;
+  font-family: "Quantico", sans-serif;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+
+  /* --- HOME --- */
+  .home-body {
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 100px;
+  }
+
+  .home-body::before {
+    background-position: right bottom;
+    background-size: 60%;
+    opacity: 0.25;
+  }
+
+  .home-conteudo {
+    position: relative;
+    left: auto;
+    top: auto;
+    padding: 20px 16px 20px;
+    max-width: 100%;
+  }
+
+  .home-conteudo h1 {
+    font-size: clamp(22px, 7vw, 32px);
+  }
+
+  .home-body p {
+    font-size: clamp(14px, 4vw, 18px);
+    margin-right: 0;
+    line-height: 1.5;
+  }
+
+  .home-foto {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    padding: 16px 12px 0;
+    margin-bottom: 8px;
+  }
+
+  .home-foto img {
+    width: clamp(120px, 45vw, 200px);
+  }
+
+  .home-button {
+    position: fixed;
+    width: 33.333vw;
+    height: 52px;
+    left: 0 !important;
+    top: auto !important;
+    bottom: 48px;
+    transform: none;
+    padding: 0;
+    font-size: clamp(13px, 4vw, 18px);
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+
+  .home-b2 {
+    left: 33.333vw !important;
+  }
+
+  .home-b3 {
+    left: 66.666vw !important;
+  }
+
+  .home-button:hover {
+    transform: none;
+    filter: brightness(1.2);
+  }
+
+  .home-lis1,
+  .home-lis2,
+  .home-lis3 {
+    margin-left: 0;
+  }
+
+  .home-sidebar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: auto;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background: rgba(0, 100, 200, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    gap: clamp(24px, 10vw, 56px);
+    z-index: 20;
+  }
+
+  .home-sidebar a {
+    font-size: clamp(20px, 6vw, 28px);
+  }
+
+  .dh-body {
+    overflow-y: auto;
+    min-height: 100vh;
+    padding-bottom: 100px;
+  }
+
+  .dh-body::before {
+    background-position: right bottom;
+    background-size: 60%;
+    opacity: 0.2;
+  }
+
+  .dh-conteudo {
+    padding: 16px 12px 20px;
+    max-width: 100%;
+  }
+
+  .dh-body p {
+    font-size: clamp(13px, 4vw, 17px);
+    margin-right: 0;
+    line-height: 1.5;
+  }
+
+  .dh-button {
+    position: fixed;
+    width: 33.333vw;
+    height: 52px;
+    left: 0 !important;
+    top: auto !important;
+    bottom: 48px;
+    transform: none;
+    padding: 0;
+    font-size: clamp(13px, 4vw, 18px);
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+
+  .dh-b2 {
+    left: 33.333vw !important;
+  }
+
+  .dh-b3 {
+    left: 66.666vw !important;
+  }
+
+  .dh-button:hover {
+    transform: none;
+    filter: brightness(1.2);
+  }
+
+  .dh-lis1,
+  .dh-lis1c,
+  .dh-lis1o,
+  .dh-lis2,
+  .dh-lis2c,
+  .dh-lis3,
+  .dh-lis3o {
+    margin-left: 0;
+  }
+
+  .dh-sidebar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: auto;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background: rgba(35, 66, 57, 0.85);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    gap: clamp(24px, 10vw, 56px);
+    z-index: 20;
+  }
+
+  .dh-sidebar a {
+    color: #3dffc5;
+    font-size: clamp(20px, 6vw, 28px);
+  }
+
+  .dh-container-hobbies {
+    width: 100%;
+    margin: 12px 0;
+    border-radius: 6px;
+  }
+
+  .dh-tabela-jogos {
+    min-width: 480px;
+    font-size: 13px;
+  }
+
+  .dh-tabela-jogos th,
+  .dh-tabela-jogos td {
+    padding: 8px 10px;
+  }
+
+  .dh-wishlist {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  .dh-YGP-link {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: inline-block;
+    margin: 16px 0 8px;
+    font-size: clamp(14px, 4.5vw, 20px);
+    padding: 8px 16px;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+
+  .home-body {
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 140px;
+  }
+
+  .home-body::before {
+    background-size: 70%;
+    background-position: center bottom;
+    opacity: 0.15;
+  }
+
+  .home-conteudo {
+    position: relative;
+    left: auto;
+    top: auto;
+    max-width: 100%;
+    padding: 20px;
+    z-index: 2;
+  }
+
+  .home-conteudo h1 {
+    font-size: clamp(28px, 7vw, 42px);
+  }
+
+  .home-body p {
+    margin-right: 0;
+    font-size: clamp(15px, 4vw, 19px);
+    line-height: 1.6;
+  }
+
+  .home-foto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .home-foto img {
+    width: clamp(160px, 45vw, 260px);
+  }
+
+  .home-button,
+  .dh-button {
+
+    position: relative;
+    width: 100%;
+    height: 72px;
+
+    left: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    transform: none !important;
+
+    margin-bottom: 12px;
+
+    justify-content: center;
+    padding: 0;
+
+    font-size: clamp(18px, 5vw, 28px);
+
+    border-radius: 10px;
+  }
+
+  .home-button:hover,
+  .dh-button:hover {
+    transform: none !important;
+  }
+
+  .home-lis1,
+  .home-lis2,
+  .home-lis3,
+  .dh-lis1,
+  .dh-lis1c,
+  .dh-lis1o,
+  .dh-lis2,
+  .dh-lis2c,
+  .dh-lis3,
+  .dh-lis3o {
+    margin-left: 0;
+  }
+
+  .dh-body {
+    overflow-y: auto;
+    padding-bottom: 120px;
+  }
+
+  .dh-body::before {
+    background-size: 70%;
+    background-position: center bottom;
+    opacity: 0.12;
+  }
+
+  .dh-conteudo {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .dh-body p {
+    margin-right: 0;
+    font-size: clamp(14px, 4vw, 18px);
+    line-height: 1.6;
+  }
+
+  .dh-container-hobbies {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .dh-tabela-jogos {
+    min-width: 650px;
+  }
+
+  .dh-wishlist {
+    width: 100%;
+  }
+
+  .dh-wishlist-card {
+    flex-wrap: wrap;
+  }
+
+  .dh-YGP-link {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .dh-experiment-log {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .dh-log-buttons {
+    flex-direction: column;
+  }
+
+  .dh-log-buttons button {
+    width: 100%;
+  }
+
+  .home-sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  background: rgba(0, 100, 200, 0.25);
+  backdrop-filter: blur(4px);
+
+  z-index: 20;
+
+  padding: 0;
+  margin: 0;
+}
+  .dh-sidebar {
+
+    position: fixed;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 58px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+
+    padding: 0;
+
+    background: rgba(20, 45, 38, 0.92);
+    backdrop-filter: blur(6px);
+
+    z-index: 999;
+  }
+}
